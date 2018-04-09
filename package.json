@@ -4,6 +4,10 @@
   "description": "react-app-rewired, support less and css modules(*.module.css|less)",
   "main": "index.js",
   "author": "ethanyou",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youzhigang/react-app-rewire-less-with-modules"
+  },
   "license": "MIT",
   "dependencies": {
     "lodash.clonedeep": "^4.5.0"
