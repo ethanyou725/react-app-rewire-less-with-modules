@@ -44,3 +44,8 @@ module.exports = function override (config, env) {
 }
 
 ```
+
+css modules only support for `*.module.css` or `*.module.less`
+
+## Others
+`react-app-rewire` css modules support with sass, [react-app-rewire-css-modules](https://github.com/codebandits/react-app-rewire-css-modules), forked from this &#x1F4D8;.
