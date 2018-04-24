@@ -16,7 +16,7 @@ const findRule = (rulesSource, ruleMatcher) => {
 
 const cssRuleMatcher = (rule) => rule.test && String(rule.test) === String(/\.css$/)
 
-const createLoaderMatcher = (loader) => (rule) => rule.loader && rule.loader.indexOf(`/${loader}/`) !== -1
+const createLoaderMatcher = (loader) => (rule) => rule.loader && rule.loader.replace(/[\\]+/g, '/').indexOf(`/${loader}/`) !== -1
 const cssLoaderMatcher = createLoaderMatcher('css-loader')
 const postcssLoaderMatcher = createLoaderMatcher('postcss-loader')
 const fileLoaderMatcher = createLoaderMatcher('file-loader')
