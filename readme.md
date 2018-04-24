@@ -49,3 +49,13 @@ css modules only support for `*.module.css` or `*.module.less`
 
 ## Others
 `react-app-rewire` css modules support with sass, [react-app-rewire-css-modules](https://github.com/codebandits/react-app-rewire-css-modules), forked from this &#x1F4D8;.
+
+
+## changelog
+fix bugs on windows 
+```
+// const createLoaderMatcher = (loader) => (rule) => rule.loader && rule.loader.indexOf(`/${loader}/`) !== -1
+
+const createLoaderMatcher = (loader) => (rule) => rule.loader && rule.loader.replace(/[\\]+/g, '/').indexOf(`/${loader}/`) !== -1
+
+```
