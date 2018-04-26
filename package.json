@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-less-with-modules",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react-app-rewired, support less and css modules(*.module.css|less)",
   "main": "index.js",
   "author": "ethanyou",
