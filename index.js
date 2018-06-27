@@ -1,4 +1,4 @@
-const cloneDeep = require('lodash/clonedeep')
+const cloneDeep = require('./cloneDeep')
 
 const ruleChildren = (loader) => loader.use || loader.oneOf || Array.isArray(loader.loader) && loader.loader || []
 
